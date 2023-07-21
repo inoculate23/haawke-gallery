@@ -31,8 +31,6 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
             id="myFrame"
             width="100%" 
              height="100%
-            frameBorder="0"
-            scrolling="no"
             ></iframe>
      )
           />
