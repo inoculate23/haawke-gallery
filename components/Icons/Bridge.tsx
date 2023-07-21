@@ -1,6 +1,6 @@
 export default function Hawk() {
   return (
-    <img src=".//public/hawk.webp"/>
+   // <img src=".//public/hawk.webp"/>
   )
 }
 
