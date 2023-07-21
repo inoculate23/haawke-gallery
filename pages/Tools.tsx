@@ -40,7 +40,7 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
       </main>
   
     </>
-  
+  )
 export default Tools
 
 export async function getStaticProps() {
