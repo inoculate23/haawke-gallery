@@ -15,16 +15,16 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 useEffect(() => {
 
  const frame = document.getElementById('myFrame');
- console.log("height" , frame.contentWindow.document.body.scrollHeight + "px")
+ console.log("height" , frame.Window.document.body.scrollHeight + "px")
         
  setTimeout(() => {
-   setFrameHeight(frame.contentWindow.document.body.scrollHeight + "px")
+   setFrameHeight(frame.Window.document.body.scrollHeight + "px")
   },100)
 
 
  },[])
 
-  const <iframe src="https://editor.fusionbrain.ai/" frameborder="0" class="src"></iframe> 
+  const <iframe id="myIframe" src="https://editor.fusionbrain.ai/" frameborder="0" class="src"></iframe> 
   const { iframe } = router.query
  
 
