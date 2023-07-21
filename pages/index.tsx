@@ -62,11 +62,10 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               Haawke Neural Technology
             </h1>
             <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-              by Inoculate Media 
-              AI, machine learning, model training, data services
+               AI, machine learning, model training, data services
                </p>
              <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-             "if it can be imagned, we can make it"
+             "If it can be imagned, we can make it"
           </p>
           
             <a
