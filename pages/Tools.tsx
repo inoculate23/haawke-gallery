@@ -12,19 +12,10 @@ import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 
-const Tools: NextPage = ({ iframe }) => {
+
   const <iframe src="https://editor.fusionbrain.ai/" frameborder="0" class="src"></iframe> 
   const { iframe } = router.query
  
-  
-
-  useEffect(() => {
-    // This effect keeps track of the last viewed photo in the modal to keep the index page in sync when the user navigates back
-    if (lastViewedPhoto && !photoId) {
-      lastViewedPhotoRef.current.scrollIntoView({ block: 'center' })
-      setLastViewedPhoto(null)
-    }
-  }, [photoId, lastViewedPhoto, setLastViewedPhoto])
 
   return (
     <>
