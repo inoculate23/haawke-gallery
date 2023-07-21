@@ -12,17 +12,8 @@ import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 
-useEffect(() => {
-
- const frame = document.getElementById('myFrame');
- console.log("height" , frame.Window.document.body.scrollHeight + "px")
-        
- setTimeout(() => {
-   setFrameHeight(frame.Window.document.body.scrollHeight + "px")
-  },100)
 
 
- },[])
 
   const <iframe id="myIframe" src="https://editor.fusionbrain.ai/" frameborder="0" class="src"></iframe> 
   const { iframe } = router.query
@@ -42,13 +33,11 @@ useEffect(() => {
         />
       </Head>
       <main className="mx-auto max-w-[1960px] p-4">
-      const [frameHeight , setFrameHeight] = useState()
-
-
-
+      
             <iframe srcdoc={content}
             id="myFrame"
             width="100%" 
+             height="100%
             height={frameHeight}
             frameBorder="0"
             scrolling="no"
