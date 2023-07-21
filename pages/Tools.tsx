@@ -16,7 +16,7 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 
 
 
-  const { iframe } = router.query
+  const { iframe } = document.getElementById('myIframe)
  
 
   return (
