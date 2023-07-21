@@ -11,25 +11,18 @@ import cloudinary from '../utils/cloudinary'
 import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
+
 useEffect(() => {
-    Array.from(document.getElementsByTagName("iframe")).forEach((iframe) => {
-      iframe.contentWindow.addEventListener(
-        "load",
-        () => {
-          const doc = iframe.contentWindow.document;
-          iframe.height = doc.body.scrollHeight;
-        },
-        true
-      );
-      iframe.contentWindow.addEventListener(
-        "resize",
-        () => {
-          iframe.height = iframe.contentWindow.document.body.scrollHeight + 40;
-        },
-        true
-      );
-    });
-  }, []);
+
+ const frame = document.getElementById('myFrame');
+ console.log("height" , frame.contentWindow.document.body.scrollHeight + "px")
+        
+ setTimeout(() => {
+   setFrameHeight(frame.contentWindow.document.body.scrollHeight + "px")
+  },100)
+
+
+ },[])
 
   const <iframe src="https://editor.fusionbrain.ai/" frameborder="0" class="src"></iframe> 
   const { iframe } = router.query
@@ -49,7 +42,18 @@ useEffect(() => {
         />
       </Head>
       <main className="mx-auto max-w-[1960px] p-4">
-        {iframe}
+      const [frameHeight , setFrameHeight] = useState()
+
+
+
+            <iframe srcdoc={content}
+            id="myFrame"
+            width="100%" 
+            height={frameHeight}
+            frameBorder="0"
+            scrolling="no"
+            ></iframe>
+     )
           />
         )}
        
