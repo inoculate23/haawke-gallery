@@ -12,13 +12,6 @@ import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 
-
-
-
-
-  const { iframe } = document.getElementById('myIframe)
- 
-
   return (
     <>
       <Head>
