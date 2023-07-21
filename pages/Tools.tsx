@@ -6,13 +6,13 @@ import { useRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
 
 import Logo from '../components/Icons/Logo'
-import Modal from '../components/Modal'
+
 import cloudinary from '../utils/cloudinary'
 import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
-import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 
-function Tools() {
+
+function tools() {
   return (
     <>
       <Head>
@@ -28,6 +28,6 @@ function Tools() {
 
             
  
-export default Tools;
+export default tools;
 
 
