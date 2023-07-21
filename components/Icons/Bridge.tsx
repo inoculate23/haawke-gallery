@@ -2,12 +2,7 @@ export default function Bridge() {
   return (
    <svg id="svg" version="1.1" 
      xmlns="http://www.w3.org/2000/svg" 
-     style="display: block;" 
-     viewBox="0 0 512 512"
-     >
-      <title id="conf-city-title">
-        Line drawing of the Golden Gate Bridge in San Francisco.
-      </title>
+   >
      <path d="M0 0 C168.96 0 337.92 0 512 0 C512 168.96 512 337.92 512 512 C343.04 512 174.08 512 0 512 C0 343.04 0 174.08 0 0 Z " transform="translate(0,0)" style="fill: #100F10;"/>
       <path
         d="M329.5 34.5L325 36L322 38C321.333 38.5 320 39.6 320 40C320 40.4 319.333 41.1667 319 41.5L318.5 45.5V72L322.5 73M329.5 34.5C336.667 34 351.1 33 351.5 33C351.9 33 354 33.3333 355 33.5L356.5 34.5L358 36L358.5 38L358 70L357.5 70.5L354 72L350.5 73.5H330L322.5 73M329.5 34.5L324.5 38L323.5 40.5L322.5 43.5V73"
