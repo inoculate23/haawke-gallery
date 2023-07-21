@@ -31,7 +31,7 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
             id="myFrame"
             width="100%" 
              height="100%
-          />
+          </iframe>
      )
           />
         )}
@@ -41,6 +41,7 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
   
     </>
   )
+}
 export default Tools
 
 export async function getStaticProps() {
