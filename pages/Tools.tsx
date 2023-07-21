@@ -15,7 +15,7 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 
 
 
-  const <iframe id="myIframe" src="https://editor.fusionbrain.ai/" frameborder="0" class="src"></iframe> 
+
   const { iframe } = router.query
  
 
@@ -33,8 +33,8 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
         />
       </Head>
       <main className="mx-auto max-w-[1960px] p-4">
-      
-            <iframe srcdoc={content}
+
+            <iframe src="https://editor.fusionbrain.ai/"
             id="myFrame"
             width="100%" 
              height="100%
