@@ -12,7 +12,7 @@ import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 
-function MyPage() {
+function Tools() {
   return (
     <>
       <Head>
@@ -30,12 +30,4 @@ function MyPage() {
  
 export default Tools;
 
-export async function getStaticProps() {
-  const results = await iframe
-   
-  return {
-    props: {
-      images: reducedResults,
-    },
-  }
-}
+
