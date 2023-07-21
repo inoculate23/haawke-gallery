@@ -11,7 +11,25 @@ import cloudinary from '../utils/cloudinary'
 import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
-
+useEffect(() => {
+    Array.from(document.getElementsByTagName("iframe")).forEach((iframe) => {
+      iframe.contentWindow.addEventListener(
+        "load",
+        () => {
+          const doc = iframe.contentWindow.document;
+          iframe.height = doc.body.scrollHeight;
+        },
+        true
+      );
+      iframe.contentWindow.addEventListener(
+        "resize",
+        () => {
+          iframe.height = iframe.contentWindow.document.body.scrollHeight + 40;
+        },
+        true
+      );
+    });
+  }, []);
 
   const <iframe src="https://editor.fusionbrain.ai/" frameborder="0" class="src"></iframe> 
   const { iframe } = router.query
