@@ -1,5 +1,5 @@
 export default function Logo() {
   return (
-<img src=".//public/logo.webp"/>  
+<img src="https://inoculate.media/assets/logo.webp"/>  
   )
 }
