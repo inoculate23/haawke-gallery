@@ -19,7 +19,7 @@ function tools() {
         <title>Kandinsky 2.2</title>
       </Head>
       <h1>My Page</h1>
-      <iframe src="https://editor.fusionbrain.ai/" width="1920" height="1080"></iframe>
+      <iframe src="https://editor.fusionbrain.ai/" width="100%" height="100%"></iframe>
     </>
   );
 }
