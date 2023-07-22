@@ -84,8 +84,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
    Inoculate.media
   </a>
 </div>
-        
-              </div>
+        </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
             <Link
               key={id}
