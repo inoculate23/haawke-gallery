@@ -61,13 +61,13 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             <h1 className="mt-8 mb-4 text-base font-bold uppercase tracking-widest">
               Haawke Neural Technology
             </h1>
-            <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
+            <p className="max-w-[38ch] text-white/75 sm:max-w-[32ch]">
                AI, machine learning, model training, data services
                </p>
              <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
              "If it can be imagned, we can make it"
           </p>
-       <div>
+     
             <a
               className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
              href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email">
@@ -78,7 +78,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
              href="tools">
               Tools
             </a>
-          </div>
+        
               </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
             <Link
