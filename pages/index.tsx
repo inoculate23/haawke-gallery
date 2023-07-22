@@ -67,7 +67,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
              <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
              "If it can be imagned, we can make it"
           </p>
-          <div className="max-w-[60ch] columns-2 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
+       <div className="absolute inset-0 flex items-center justify-center opacity-20">
             <a
               className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
              href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email">
@@ -75,7 +75,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             </a>
                <a
               className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
-             href="/tools">
+             href="tools">
               Tools
             </a>
           </div>
@@ -107,40 +107,18 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           ))}
         </div>
       </main>
-      <footer className="p-6 text-center text-white/80 sm:p-12">
-        Thank you to{' '}
-        <a
-          href="https://edelsonphotography.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Josh Edelson
-        </a>
-        ,{' '}
-        <a
-          href="https://www.newrevmedia.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Jenny Morgan
-        </a>
-        , and{' '}
-        <a
-          href="https://www.garysextonphotography.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Gary Sexton
-        </a>{' '}
-        for the pictures.
+       <footer className="p-6 text-center text-white/80 sm:p-12">
+        <div>
+ All rights reserved, 2023 - Inoculate Media - "Design, Coding. & Consulting"  
+          </div>
+        <div>702-776-1124    Las Vegas, NV
+   
       </footer>
     </>
   )
 }
 
+  
 export default Home
 
 export async function getStaticProps() {
