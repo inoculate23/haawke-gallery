@@ -10,7 +10,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import Header from "../components/Header";
-import sidebar from "../components/Sidebar";
+import Sidebar from "../components/Sidebar";
 import { SidebarProvider } from "./context/SidebarContext";
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
