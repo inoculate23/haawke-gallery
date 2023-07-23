@@ -1,3 +1,4 @@
+import { Navbar } from 'flowbite-react';
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
@@ -24,6 +25,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body className="bg-black antialiased">
+          < Navbar />
           <Main />
           <NextScript />
         </body>
@@ -31,18 +33,7 @@ class MyDocument extends Document {
     )
   }
 }
-/**
- * @type {import('@types/tailwindcss/tailwind-config').TailwindConfig}
- */
-module.exports = {
-  content: [
-    "./node_modules/flowbite-react/**/*.js",
-    "./pages/**/*.{ts,tsx}",
-    "./public/**/*.html",
-  ],
-  plugins: [
-    require("flowbite/plugin")
-  ],
-  theme: {},
-};
+
 export default MyDocument
+
+
