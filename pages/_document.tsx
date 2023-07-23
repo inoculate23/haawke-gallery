@@ -1,4 +1,18 @@
-import { Navbar } from 'flowbite-react';
+import {
+  Footer,
+  Navbar,
+} from "flowbite-react";
+import {
+  BsDribbble,
+  BsFacebook,
+  BsGithub,
+  BsInstagram,
+  BsTwitter,
+} from "react-icons/bs";
+import Header from "./components/header";
+
+import Sidebar from "./components/sidebar";
+import { SidebarProvider } from "./context/SidebarContext";
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
@@ -25,7 +39,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body className="bg-black antialiased">
-          < Navbar />
+        
           <Main />
           <NextScript />
         </body>
