@@ -1,5 +1,5 @@
 import { DarkThemeToggle, Navbar } from "flowbite-react";
-import Image from "next/image";
+import Image from "../public/logo.webp";
 import { FC } from "react";
 import { useSidebarContext } from "../context/SidebarContext";
 
@@ -48,13 +48,13 @@ const Header: FC<Record<string, never>> = function () {
         )}
         <Navbar.Brand href="/">
           <Image
-            alt="Flowbite logo"
+            alt="Haawke logo"
             height="24"
-            src="/favicon.png"
+            src="../public/logo.webp"
             width="24"
           />
           <span className="self-center whitespace-nowrap px-3 text-xl font-semibold dark:text-white">
-            Flowbite
+            Haawke Neural Technology
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">
@@ -67,7 +67,7 @@ const Header: FC<Record<string, never>> = function () {
           </Navbar.Link>
           <Navbar.Link href="/">About</Navbar.Link>
           <Navbar.Link href="/">Services</Navbar.Link>
-          <Navbar.Link href="/">Pricing</Navbar.Link>
+          <Navbar.Link href="/">Gallery</Navbar.Link>
           <Navbar.Link href="/">Contact</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
