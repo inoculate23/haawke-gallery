@@ -26,7 +26,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
       setLastViewedPhoto(null)
     }
   }, [photoId, lastViewedPhoto, setLastViewedPhoto])
-
+  function index() {
   return (
     <>
       <Head>
