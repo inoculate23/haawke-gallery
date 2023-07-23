@@ -160,7 +160,7 @@ export async function getStaticProps() {
   return {
     props: {
       images: reducedResults,
-      Navbar,
+     
      
     },
   }
