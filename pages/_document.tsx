@@ -9,9 +9,9 @@ import {
   BsInstagram,
   BsTwitter,
 } from "react-icons/bs";
-import Header from "./components/header";
+import Header from "../components/header";
 
-import Sidebar from "./components/sidebar";
+import Sidebar from "../components/sidebar";
 import { SidebarProvider } from "./context/SidebarContext";
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
