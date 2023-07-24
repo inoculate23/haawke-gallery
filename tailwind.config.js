@@ -10,6 +10,7 @@ module.exports = {
     "./node_modules/flowbite-react/**/*.js",
     "./pages/**/*.{ts,tsx}",
     "./public/**/*.html",
+    "./context/**/*.tsx",
   ],
   theme: {
     extend: {
