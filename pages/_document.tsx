@@ -3,7 +3,7 @@ import Script from 'next/script'
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <>
       <Head>
          <meta name="description"
            content="Haawke Neural - AI and machine learning design and consulting agency in Las Vegas, Nevada. Our emphasis is on creating new technology to enhance visitors' experiences in Las Vegas, and beyond."
@@ -30,7 +30,7 @@ export default function Document() {
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossOrigin="anonymous" />
 
       </body>
-    </Html>
+    </>
   )
 }
 
