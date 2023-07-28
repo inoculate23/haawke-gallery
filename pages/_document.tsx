@@ -1,6 +1,4 @@
-import Header from "../components/Header";
-import sidebar from "../components/sidebar";
-import { SidebarProvider } from "../context/SidebarContext";
+
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
