@@ -29,7 +29,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
   return (
     <>
-      <Head>
+      <Head data-bs-theme="dark">
         <title>Haawke Neural Technology - Las Vegas AI experts</title>
         <meta
           property="og:image"
