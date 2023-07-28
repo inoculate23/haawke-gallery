@@ -10,7 +10,7 @@ import Logo from '../components/Icons/Logo'
 import cloudinary from '../utils/cloudinary'
 import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
-import { Navbar } from "flowbite-react";
+
 
 
 function tools() {
