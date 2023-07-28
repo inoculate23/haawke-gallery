@@ -70,22 +70,22 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
              "If it can be imagned, we can make it"
           </p>
      <div className="inline-flex rounded-md shadow-sm">
-  <a href="https://huggingface.co/HaawkeNeural" className="flex justify-center">
+  <link href="https://huggingface.co/HaawkeNeural" className="flex justify-center">
     Huggingface 
-  </a>
-  <a href="tools" className="flex justify-center">
+  </link>
+  <link href="tools" className="flex justify-center">
   
    AI Tools
-  </a>
-  <a href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email" className="flex justify-center">
+  </link>
+  <link href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email" className="flex justify-center">
     Contact
-  </a>
-  <a href="https://github.com/inoculate23" className="flex justify-center">
+  </link>
+  <link href="https://github.com/inoculate23" className="flex justify-center">
    Github
-  </a>
-  <a href="https://inoculate.media" className="flex justify-center">
+  </link>
+  <link href="https://inoculate.media" className="flex justify-center">
    Inoculate.media
-  </a>
+  </link>
 </div>
         </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
