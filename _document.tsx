@@ -1,27 +1,11 @@
-import {
-  Footer,
-  Navbar,
-} from "flowbite-react";
-import {
-  BsDribbble,
-  BsFacebook,
-  BsGithub,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
-import Header from "../components/Header";
-import sidebar from "../components/sidebar";
-import { SidebarProvider } from "../context/SidebarContext";
-import Document, { Head, Html, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
-class MyDocument extends Document {
-  render() {
-    return (
-      <Html lang="en">
-        <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
+export default function Document() {
+  return (
+    <Html lang="en">
+      <Head>
+         <meta name="description"
            content="Haawke Neural - AI and machine learning design and consulting agency in Las Vegas, Nevada. Our emphasis is on creating new technology to enhance visitors' experiences in Las Vegas, and beyond."
           />
           <meta property="og:site_name"  content="Haawke Neural Technology - Las Vegas AI and machine learning experts" />
@@ -37,16 +21,20 @@ class MyDocument extends Document {
              content="Haawke Neural - AI and machine learning design and consulting agency in Las Vegas, Nevada. Our emphasis is on creating new technology to enhance visitors' experiences in Las Vegas, and beyond."
           />
         </Head>
-        <body className="bg-black antialiased">
-        
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+      </Head>
+     <body className="bg-black antialiased">
+        <Main />
+        <NextScript />
+
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossOrigin="anonymous" />
+
+      </body>
+    </Html>
+  )
 }
 
-export default MyDocument
 
+ 
+        
 
