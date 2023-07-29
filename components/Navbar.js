@@ -1,28 +1,51 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function NavDropdown() {
-
+function BrandExample() {
   return (
-    <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
-         <Navbar expand="lg" bg="dark" data-bs-theme="dark">
-      <Container>
-        <Navbar.Brand href="#home">Haawke Neural Teachnology</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">AI Tools</Nav.Link>
-          <Nav.Link href="#link">AI Tools</Nav.Link>
-     <Nav.Link href="#link">AI Tools</Nav.Link>
-     <Nav.Link href="#link">AI Tools</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand>Brand text</Navbar.Brand>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              src="../public/logo.webp"
+              width="35"
+              height="35"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="/img/logo.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            React Bootstrap
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 
-export default NavDropdown;
+export default BrandExample;
