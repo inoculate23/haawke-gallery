@@ -36,7 +36,7 @@ class MyDocument extends Document {
   )
 }
 
-
+}
  
         
 
