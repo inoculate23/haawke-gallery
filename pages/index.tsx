@@ -46,7 +46,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
       </Head>
 
       <main className="mx-auto max-w-[1960px] p-4">
-   <NavDropdownExample/>
+   <NavDropdown/>
         {photoId && (
           <Modal
             images={images}
