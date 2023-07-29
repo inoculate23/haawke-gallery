@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-
+import NavDropdown from 'react-bootstrap/NavDropdown';
 class MyDocument extends Document {
   render() {
     return (
