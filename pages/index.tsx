@@ -14,7 +14,8 @@ import cloudinary from '../utils/cloudinary'
 import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
-
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
   const { photoId } = router.query
@@ -45,7 +46,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
       </Head>
 
       <main className="mx-auto max-w-[1960px] p-4">
-    
+   <NavDropdownExample/>
         {photoId && (
           <Modal
             images={images}
@@ -73,22 +74,14 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
              "If it can be imagned, we can make it"
           </p>
      <div className="inline-flex rounded-md shadow-sm">
-  <link href="https://huggingface.co/HaawkeNeural" className="flex justify-center">
-    Huggingface 
-  </link>
-  <link href="tools" className="flex justify-center">
-  
-   AI Tools
-  </link>
-  <link href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email" className="flex justify-center">
-    Contact
-  </link>
-  <link href="https://github.com/inoculate23" className="flex justify-center">
-   Github
-  </link>
-  <link href="https://inoculate.media" className="flex justify-center">
-   Inoculate.media
-  </link>
+          <ButtonGroup size="lg" className="mb-2">
+        <Button href="https://huggingface.co/HaawkeNeural">Huggingface</Button>
+        <Button href="./tools">AI tools</Button>
+       <Button href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email">Contact</Button>
+             <Button href="https://github.com/inoculate23">Github</Button>
+             <Button href="https://inoculate.media">Inoculate Media</Button>
+      </ButtonGroup>
+      <br />
 </div>
         </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
