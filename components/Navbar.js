@@ -8,7 +8,7 @@ function NavDropdownExample() {
 
   return (
     <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
-     <Navbar expand="lg" className="bg-body-tertiary">
+         <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
