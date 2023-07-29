@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import { Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import DocumentContext from 'next/document'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../components/Icons/Logo'
 import Modal from '../components/Modal'
 import cloudinary from '../utils/cloudinary'
