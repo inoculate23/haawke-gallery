@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavDropdown() {
-  const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
 
   return (
     <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
