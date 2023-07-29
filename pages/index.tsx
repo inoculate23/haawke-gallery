@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
-import NavDropdownExample from '../components/Vavbar'
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Modal from '../components/Modal'
 import Logo from '../components/Icons/Logo'
 import Modal from '../components/Modal'
