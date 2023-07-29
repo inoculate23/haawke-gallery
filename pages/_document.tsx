@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import DocumentContext type from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
