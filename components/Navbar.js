@@ -34,4 +34,4 @@ function NavDropdownExample() {
   );
 }
 
-export default NavDropdownExample;
+export default NavDropdown;
