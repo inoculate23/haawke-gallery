@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Html, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import BrandExample from 'react-bootstrap/BrandExample;';
 import DocumentContext from 'next/document'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -44,24 +44,47 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
       </Head>
-  <NavDropdown>
-      <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
-         <Navbar expand="lg" bg="dark" data-bs-theme="dark">
-      <Container>
-        <Navbar.Brand href="#home">Haawke Neural Teachnology</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">AI Tools</Nav.Link>
-          <Nav.Link href="#link">AI Tools</Nav.Link>
-            <Nav.Link href="#link">AI Tools</Nav.Link>
-            <Nav.Link href="#link">AI Tools</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-      </NavDropdown>
+  <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand>Brand text</Navbar.Brand>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              src="../public/logo.webp"
+              width="35"
+              height="35"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="/img/logo.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            React Bootstrap
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+
       <main className="mx-auto max-w-[1960px] p-4">
  
         {photoId && (
