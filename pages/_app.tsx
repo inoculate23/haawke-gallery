@@ -5,9 +5,9 @@ import Switcher from "../components/switcher";
 
 function App() {
 	return (
-		<div>
+	
 			<div style={{ textAlign: "center" }}>
-				
+			</div>
 	);
 }
 
