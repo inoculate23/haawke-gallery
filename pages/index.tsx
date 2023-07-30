@@ -64,7 +64,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             />{' '}
            Haawke Neural Technology
           </Navbar.Brand>
-      <ButtonGroup size="lg" className="mb-2">
+      <ButtonGroup className="mb-2" variant="dark">
         <Button href="https://huggingface.co/HaawkeNeural">Huggingface</Button>
         <Button href="./tools">AI tools</Button>
        <Button href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email">Contact</Button>
