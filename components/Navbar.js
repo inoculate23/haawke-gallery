@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function BrandExample() {
   return (
     <>
-      <Navbar className="bg-body-tertiary">
+     <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">Brand link</Navbar.Brand>
         </Container>
