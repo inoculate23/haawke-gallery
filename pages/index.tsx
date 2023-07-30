@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import { Html, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-import BrandExample from 'react-bootstrap/BrandExample;';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 import DocumentContext from 'next/document'
 import Head from 'next/head'
 import Image from 'next/image'
