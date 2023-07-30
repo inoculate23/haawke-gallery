@@ -26,23 +26,22 @@ function BrandExample() {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar className="bg-body-tertiary">
-        <Container>
+        <Navbar bg="dark" data-bs-theme="dark">
+  
           <Navbar.Brand href="#home">
             <img
-              alt=""
-              src="/img/logo.svg"
-              width="30"
-              height="30"
+              alt="logo"
+              src="https://inoculate.media/assets/logo_200.png"
+              width="35"
+              height="35"
               className="d-inline-block align-top"
             />{' '}
-            React Bootstrap
+           Haawke Neural Technology
+                        <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Navbar.Brand>
-        </Container>
+     
       </Navbar>
     </>
   );
