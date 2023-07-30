@@ -51,6 +51,12 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
   crossOrigin="anonymous"
 />
+        <style>
+        @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}</style>
       </Head>
  <Navbar bg="dark" data-bs-theme="dark">
   
