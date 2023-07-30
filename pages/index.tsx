@@ -51,7 +51,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           <Navbar.Brand href="#home">
             <img
               alt="logo"
-              src="../public/logo.webp"
+              src="https://inoculate.media/assets/logo_200.png"
               width="35"
               height="35"
               className="d-inline-block align-top"
