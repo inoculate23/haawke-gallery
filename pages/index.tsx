@@ -18,6 +18,9 @@ import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import BasicButton from '../components/BasicButton';
+  import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
   const { photoId } = router.query
@@ -67,7 +70,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           </Navbar.Brand>
       <ButtonGroup className="mb-2">
         <Button href="https://huggingface.co/HaawkeNeural">Huggingface</Button>
-        <Button href="./tools">AI tools</Button>
+           <DropdownButton id="dropdown-basic-button" title="AI Tools">
+      <Dropdown.Item href="Tools">Fusion Brain</Dropdown.Item>
+      <Dropdown.Item href="https://inpainter-stable-diffusion-beige.vercel.app/">Inpaintern</Dropdown.Item>
+      <Dropdown.Item href="https://scribble-diffusion-ivory-six.vercel.app/">Scribble Diffusion</Dropdown.Item>
+    </DropdownButton>
        <Button href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email">Contact</Button>
              <Button href="https://github.com/inoculate23">Github</Button>
              <Button href="https://inoculate.media">Inoculate Media</Button>
