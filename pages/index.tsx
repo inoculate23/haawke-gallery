@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Html, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-import TypesExample from '../variants'
+import TypesExample from '../components/variants'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import DocumentContext from 'next/document'
