@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import '../styles/index.css'
 import React from "react";
-import Switcher from "./Components/Switcher";
+import Switcher from "../components/switcher";
 
 function App() {
 	return (
