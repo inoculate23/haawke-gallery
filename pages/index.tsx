@@ -69,6 +69,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
            Haawke Neural Technology
           </Navbar.Brand>
       <ButtonGroup className="mb-2">
+         <Button href="#"About Us</Button>
         <Button href="https://huggingface.co/HaawkeNeural">Huggingface</Button>
              <DropdownButton id="dropdown-basic-button" title="AI Tools">
       <Dropdown.Item href="Tools">Fusion Brain</Dropdown.Item>
