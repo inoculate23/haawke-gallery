@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import { Html, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-import Container from 'react-bootstrap/Container';
+
+import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import DocumentContext from 'next/document'
 import Head from 'next/head'
@@ -45,47 +46,23 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
       </Head>
-  <Navbar className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand>Brand text</Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar className="bg-body-tertiary">
-        <Container>
+ <Navbar bg="dark" data-bs-theme="dark">
+  
           <Navbar.Brand href="#home">
             <img
+              alt="logo"
               src="../public/logo.webp"
               width="35"
               height="35"
               className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="/img/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
             />{' '}
-            React Bootstrap
+           Haawke Neural Technology
+                        <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Navbar.Brand>
-        </Container>
+     
       </Navbar>
-
       <main className="mx-auto max-w-[1960px] p-4">
  
         {photoId && (
