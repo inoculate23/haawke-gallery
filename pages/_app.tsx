@@ -14,7 +14,7 @@ function App() {
 					Adding Dark Mode in ReactJS using Tailwind CSS
 				</h3>
 			</div>
-			<center>
+		
 				<Switcher />
 				<div class="w-56 overflow-hidden bg-white
 				rounded-lg border border-gray-200
@@ -40,7 +40,7 @@ function App() {
 						</p>
 					</div>
 				</div>
-			</center>
+			
 		</div>
 	);
 }
