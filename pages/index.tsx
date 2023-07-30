@@ -52,11 +52,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   crossOrigin="anonymous"
 />
         <style>
-        @media (prefers-color-scheme: dark) {
+      
   Html {
     color-scheme: dark;
   }
-}</style>
+</style>
       </Head>
  <Navbar bg="dark" data-bs-theme="dark">
   
