@@ -63,11 +63,17 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               className="d-inline-block align-top"
             />{' '}
            Haawke Neural Technology
-                        <Nav.Link href="#home">Home</Nav.Link>
+          </Navbar.Brand>
+      <ButtonGroup size="lg" className="mb-2">
+        <Button href="https://huggingface.co/HaawkeNeural">Huggingface</Button>
+        <Button href="./tools">AI tools</Button>
+       <Button href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email">Contact</Button>
+             <Button href="https://github.com/inoculate23">Github</Button>
+             <Button href="https://inoculate.media">Inoculate Media</Button>
+      </ButtonGroup>
+    <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Navbar.Brand>
-     
       </Navbar>
       <main className="mx-auto max-w-[1960px] p-4">
  
@@ -98,13 +104,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
              "If it can be imagned, we can make it"
           </p>
      <div className="inline-flex rounded-md shadow-sm">
-          <ButtonGroup size="lg" className="mb-2">
-        <Button href="https://huggingface.co/HaawkeNeural">Huggingface</Button>
-        <Button href="./tools">AI tools</Button>
-       <Button href="mailto:craig@inoculate.media?cc=terbo@inoculate.media&subject=The%20subject%20of%20the%20email">Contact</Button>
-             <Button href="https://github.com/inoculate23">Github</Button>
-             <Button href="https://inoculate.media">Inoculate Media</Button>
-      </ButtonGroup>
+         
       <br />
 </div>
         </div>
