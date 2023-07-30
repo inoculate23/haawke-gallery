@@ -53,7 +53,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 />
         <style>
         @media (prefers-color-scheme: dark) {
-  html {
+  Html {
     color-scheme: dark;
   }
 }</style>
