@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       boxShadow: {
         highlight: 'inset 0 0 0 1px rgba(255, 255, 255, 0.05)',
+         darkMode: "class",
       },
       screens: {
         narrow: { raw: '(max-aspect-ratio: 3 / 2)' },
