@@ -37,7 +37,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   }, [photoId, lastViewedPhoto, setLastViewedPhoto])
 
   return (
-    <>
+ 
       <Head data-bs-theme="dark">
         <title>Haawke Neural Technology - Las Vegas AI experts</title>
         <meta
@@ -155,7 +155,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           702-776-1124    Las Vegas, NV
    </div>
       </footer>
-    </>
+    
   )
 }
 
