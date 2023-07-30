@@ -7,3 +7,6 @@
     clip-path: inset(0.6px);
   }
 }
+html, body {
+  background-color: black;
+}
