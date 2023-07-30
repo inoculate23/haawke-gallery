@@ -16,16 +16,16 @@ function App() {
 			</div>
 		
 				<Switcher />
-				<div class="w-56 overflow-hidden bg-white
+				<div className="w-56 overflow-hidden bg-white
 				rounded-lg border border-gray-200
 				shadow-md dark:bg-gray-800 dark:border-gray-700">
 					<img
-						class="rounded-t-lg"
+						className="rounded-t-lg"
 						src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20220221132017/download.png"
 						alt="gfg"
 					/>
-					<div class="p-5">
+					<div className="p-5">
 						<a href="##">
 							<h5 class="mb-2 text-2xl
 							font-bold tracking-tight
@@ -33,10 +33,9 @@ function App() {
 								GeeksforGeeks
 							</h5>
 						</a>
-						<p class="mb-3 font-normal text-gray-700
+						<p className="mb-3 font-normal text-gray-700
 							dark:text-gray-400">
-							Best coding website for
-							developers in the world.
+							
 						</p>
 					</div>
 				</div>
