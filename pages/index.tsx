@@ -39,7 +39,26 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   return (
  <>
       <Head data-bs-theme="dark">
-   
+    <!-- Primary Meta Tags -->
+<title>Haawke Neural Technology</title>
+<meta name="title" content="Haawke Neural Technology" />
+<meta name="description" content="Haawke Neural Tech, Las Vegas AI experts" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io" />
+<meta property="og:title" content="Haawke Neural Technology" />
+<meta property="og:description" content="Haawke Neural Tech, Las Vegas AI experts" />
+<meta property="og:image" content="https://inoculate.media/assets/og-image.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io" />
+<meta property="twitter:title" content="Haawke Neural Technology" />
+<meta property="twitter:description" content="Haawke Neural Tech, Las Vegas AI experts" />
+<meta property="twitter:image" content="https://inoculate.media/assets/og-image.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
         <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
