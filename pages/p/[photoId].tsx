@@ -17,9 +17,26 @@ const Home: NextPage = ({ currentPhoto }: { currentPhoto: ImageProps }) => {
   return (
     <>
       <Head>
-        <title>Next.js Conf 2022 Photos</title>
-        <meta property="og:image" content={currentPhotoUrl} />
-        <meta name="twitter:image" content={currentPhotoUrl} />
+     <!-- Primary Meta Tags -->
+<title>Haawke Neural Technology</title>
+<meta name="title" content="Haawke Neural Technology" />
+<meta name="description" content="Haawke Neural Tech, Las Vegas AI experts" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io" />
+<meta property="og:title" content="Haawke Neural Technology" />
+<meta property="og:description" content="Haawke Neural Tech, Las Vegas AI experts" />
+<meta property="og:image" content="https://inoculate.media/assets/og-image.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io" />
+<meta property="twitter:title" content="Haawke Neural Technology" />
+<meta property="twitter:description" content="Haawke Neural Tech, Las Vegas AI experts" />
+<meta property="twitter:image" content="https://inoculate.media/assets/og-image.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
       </Head>
       <main className="mx-auto max-w-[1960px] p-4">
         <Carousel currentPhoto={currentPhoto} index={index} />
