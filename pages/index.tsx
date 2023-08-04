@@ -37,8 +37,8 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   }, [photoId, lastViewedPhoto, setLastViewedPhoto])
 
   return (
-<>
-      <Head data-bs-theme="dark">
+    <>
+      <Head>
     <!-- Primary Meta Tags -->
 <title>Haawke Neural Technology</title>
 <meta name="title" content="Haawke Neural Technology" />
