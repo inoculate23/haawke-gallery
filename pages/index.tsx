@@ -38,8 +38,9 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
   return (
  
-      <>
+      
       <Head>
+        <>
         <title>Haawke Neural Technology - Las Vegas AI experts</title>
         <meta
           property="og:image"
