@@ -38,19 +38,26 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
   return (
  
-      <Head data-bs-theme="dark">
+      <>
+      <Head>
         <title>Haawke Neural Technology - Las Vegas AI experts</title>
-        <MetaProperty="og:image" content="https://nextjsconf-pics.vercel.app/og-image.png"
+        <meta
+          property="og:image"
+          content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
-        <MetaName="twitter:image" content="https://nextjsconf-pics.vercel.app/og-image.png"
+        <meta
+          name="twitter:image"
+          content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
-        <link rel="stylesheet"
+                <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
   crossOrigin="anonymous"
 />
-    
       </Head>
+
+      </>
+   
  <Navbar bg="dark" data-bs-theme="dark">
   
           <Navbar.Brand href="#home">
