@@ -20,6 +20,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import BasicButton from '../components/BasicButton';
   import Dropdown from 'react-bootstrap/Dropdown';
+import OgImage from '../public/og-image';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
@@ -38,13 +39,12 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
   return (
  
-      <Fragment>
       <Head>
   
         <title>Haawke Neural Technology - Las Vegas AI experts</title>
         <meta
           property="og:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content={lOgImage}"
         />
         <meta
           name="twitter:image"
