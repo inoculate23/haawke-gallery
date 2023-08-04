@@ -146,11 +146,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           702-776-1124    Las Vegas, NV
    </div>
       </footer>
-    
+       </>
   )
 }
 
-      </>
+   
 export default Home
 
 export async function getStaticProps() {
