@@ -79,10 +79,10 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             />{' '}
            Haawke Neural Technology
           </Navbar.Brand>
-      <ButtonGroup className="mb-2">
+      <ButtonGroup className=" class="h-10 px-5 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-l-lg focus:shadow-outline hover:bg-indigo-800">
          <Button href="#"About Us</Button>
         <Button href="https://huggingface.co/HaawkeNeural">Huggingface</Button>
-             <DropdownButton id="dropdown-basic-button" title="AI Tools">
+             <DropdownButton id="dropdown-basic-button" title="AI Tools"  class="h-10 px-5 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-l-lg focus:shadow-outline hover:bg-indigo-800">
       <Dropdown.Item href="Tools">Fusion Brain</Dropdown.Item>
       <Dropdown.Item href="https://inpainter-stable-diffusion-beige.vercel.app/">Inpainter</Dropdown.Item>
       <Dropdown.Item href="https://scribble-diffusion-ivory-six.vercel.app/">Scribble Diffusion</Dropdown.Item>
